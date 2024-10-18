@@ -1,0 +1,58 @@
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.button-1{
+    background-color: var(--clear);
+    padding: 1rem;
+    max-width: 10rem;
+    border: none;
+    border-radius: 8px; 
+    color: var(--gray);
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    animation: fadeIn 1s ease-in-out;
+}
+.button-1 i{
+    margin-right: 0.5rem;
+}
+.button-1:hover {
+    background-color: var(--parchment); 
+    box-shadow: var(--darkshadow);
+}
+.button-2 {
+    background-color: transparent;
+    padding: 1rem;
+    width: 10rem;
+    border: 2px solid var(--clear); 
+    border-radius: 8px; 
+    color: var(--clear); 
+    font-size: 1rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+    animation: fadeIn 1s ease-in-out;
+}
+.button-2 i {
+    margin-right: 0.5rem;
+}
+.button-2:hover {
+    background-color: #e0e0e0; 
+    color: #333; 
+    border-color: #333; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .buttons {
+        align-items: center; /* Center buttons */
+    }
+
+    .button-1, .button-2 {
+        font-size: 0.7rem; /* Decrease font size */
+        width: 100%; /* Allow buttons to take full width */
+        max-width: none; /* Remove max-width for full flexibility */
+    }
+}

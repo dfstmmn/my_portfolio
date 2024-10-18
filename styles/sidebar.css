@@ -1,0 +1,116 @@
+:root{
+    --navy: #24293E;
+    --ocean: #2F3651;
+    --clear: #8EBBFF;
+    --blue: #9290C3;
+    --gray: #2C2C2C;
+    --parchment: #FBF5DF;
+    --whiteshadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+    --darkshadow: 4px 4px 0 rgba(44, 44, 44, 0.5);
+}
+
+aside {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 21rem;
+    height: 100%;
+    background-color: var(--navy);
+    padding: 2rem 1rem;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 10rem;
+    background: var(--gray);
+    padding: 1rem;
+    border-radius: 50px;
+    box-shadow: var(--whiteshadow);
+}
+.img-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.info-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: var(--ocean);
+    box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+    border-radius: 10px;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.info-container hr{
+    width: 100%;
+    color: var(--parchment);
+}
+.sub-info{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; /* Adjust the width as needed */
+    height: 3rem; /* Adjust the height as needed */
+    background-color: var(--gray); /* Background color for the box */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 4px 4px 0 rgba(255, 255, 255, 0.5); 
+    margin-right: 0.5rem;
+}
+.icon {
+    font-size: 1.5rem;
+}
+.name-box{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+.name-box p{
+    margin-top: -9px;
+    color: silver;
+}
+.social-icon-container{
+    background-color: var(--parchment);
+    border-radius: 50px;
+    width: 100%;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: var(--darkshadow);
+}
+
+.social-icon-container i{
+    font-size: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+.social-icon-container i:hover {
+    transform: translateY(-5px);
+}
+
+.social-icon-container a:nth-of-type(1) {
+    color: #3b5998;
+}
+
+.social-icon-container a:nth-of-type(2) {
+    color: #333;
+}
+
+.social-icon-container a:nth-of-type(3) {
+    color: #0077b5; 
+}

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="styles/experience.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <aside>
+        <!-- PROFILE PICTURE -->
+        <div class="img-container">
+            <img src="images/memoji.png" alt="profile">
+        </div>
+        <h2>Emmanuel Defiesta</h2>
+        <!-- INFORMATION CONTAINER -->
+        <div class="info-container">
+            <section class="sub-info">
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                </div>
+                <div class="name-box">
+                    <h3>Address</h3>
+                    <p>General Trias, Cavite, 4107</p>
+                </div>
+            </section>
+            <hr>
+            <section class="sub-info">
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-mobile"></i>
+                    </div>
+                </div>
+                <div class="name-box">
+                    <h3>Mobile</h3>
+                    <p>09694912904</p>
+                </div>
+            </section>
+            <hr>
+            <section class="sub-info">
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+                <div class="name-box">
+                    <h3>Email</h3>
+                    <p>emmandefiesta.23@gmail.com</p>
+                </div>
+            </section>
+            <hr>
+            <section class="sub-info">
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                </div>
+                <div class="name-box">
+                    <h3>Birthday</h3>
+                    <p>June 23, 2001</p>
+                </div>
+            </section>
+            <hr>
+            <!-- SOCIAL MEDIA CONTAINER -->
+            <section class="social-icon-container">
+                <a href="https://www.facebook.com/emmanueljustin.defiesta/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://github.com/dfstmmn"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/emmanuel-defiesta-916b172a7"><i class="fa-brands fa-linkedin"></i></a>
+            </section>
+        </div>
+    </aside>
+    <!-- MAIN CONTENT -->
+    <main>
+    <!-- NAVBAR -->
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+        <br>
+    <!-- HERO SECTION -->
+        <section class="container" id="top">
+            <div class="left">
+                <h1>Hi! I am <strong>Emmanuel Defiesta</strong></h1>
+                <div class="buttons">
+                    <button class="button-1" onclick="openCV()">
+                        <i class="fa-solid fa-download"></i>Download CV
+                    </button>
+                    <button class="button-2" onclick="location.href='#contact'">
+                        <i class="fa-solid fa-envelope"></i>Message
+                    </button>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/illustration.png" alt="cartoon-person">
+            </div>
+        </section>
+    <!-- ABOUT -->
+        <section class="container" id="about">
+            <h1>About Me</h1>
+            <div class="paragraph-container">
+                <p>I am a passionate web developer with a keen interest in DevOps and data analysis. As a computer engineering graduate, I have developed a solid foundation in programming and problem-solving, always eager to explore new technologies and enhance my skills in both development and operations.</p>
+            </div>
+            <br>
+            <h1>What I do?</h1>
+            <div class="container-layout">
+                <div class="sub-container">
+                    <div class="sub-icon">
+                        <i class="devicon-azuresqldatabase-plain"></i>
+                    </div>
+                    <div class="sub-text">
+                        <h3>Database Management</h3>
+                        <label>With hands-on experience in Database Management, I've worked extensively with MySQL, MS SQL, and Visual Studio SSIS during my college years.</label>
+                    </div>
+                </div>
+                <div class="sub-container">
+                    <div class="sub-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="sub-text">
+                        <h3>Full-Stack Development</h3>
+                        <label>With a background in Full-Stack Development, I specialize in creating responsive and dynamic web applications, proficient in both front-end and back-end technologies.</label>
+                    </div>
+                </div>
+                <div class="sub-container">
+                    <div class="sub-icon">
+                        <i class="devicon-embeddedc-plain"></i>
+                    </div>
+                    <div class="sub-text">
+                        <h3>Embedded Development</h3>
+                        <label>I have hands-on experience in Embedded Development, programming microcontrollers with Arduino IDE to create efficient and reliable electronic systems.</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <hr>
+    <!-- TECHNICAL SKILLS -->
+        <section class="container" id="skills">
+                <h1>Technical Skills</h1>
+                    <!-- WEB DEVELOPMENT -->
+                        <div class="tools">
+                            <h2>Web Development</h2>
+                            <div class="icon-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" />
+                            </div>
+                        </div>
+                    <!-- PROGRAMMING LANGUAGES -->
+                        <div class="tools">
+                            <h2>Programming Languages</h2>
+                            <div class="icon-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualbasic/visualbasic-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />
+                            </div>
+                        </div>
+                    <!-- DATABASES -->
+                        <div class="tools">
+                            <h2>Database Servers</h2>
+                            <div class="icon-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" />
+                            </div>
+                        </div>
+                    <!-- DATA SCIENCE AND MACHINE LEARNING -->
+                    <div class="tools">
+                            <h2>Data Science & Machine Learning</h2>
+                            <div class="icon-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original-wordmark.svg" />
+                            </div>
+                        </div>
+                    <!-- VERSION CONTROL SYSTEM -->
+                    <div class="tools">
+                        <h2>Version Control System</h2>
+                        <div class="icon-image">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                        </div>
+                    </div>
+                    <!-- OTHER TOOLS -->
+                        <div class="tools">
+                            <h2>IDEs, Design, Virtual Machine</h2>
+                            <div class="icon-image">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vsphere/vsphere-original-wordmark.svg" />
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" />
+                            </div>
+                        </div>
+        </section>
+        <hr>
+    <!-- EDUCATION -->
+        <section class="container" id="education">
+                <h1>Education</h1>
+                <div class="image-row">
+                    <img src="images/dlsud.png" alt="dlsud">
+                    <div class="education-info">
+                        <h2>De La Salle University - Dasmariñas</h2>
+                        <label>Bachelor of Science in Computer Engineering</label>
+                        <em>Specialization: Software Engineering</em>
+                        <label>2020 - 2024</label>
+                    </div>
+                </div>
+                <p>I graduated with a Bachelor's Degree in Computer Engineering from De La Salle University – Dasmariñas. Throughout my academic journey, I gained a strong foundation in programming, web development, and systems engineering, which equipped me with the skills to tackle real-world technical challenges.</p>
+                <div class="certificate">
+                    <img src="images/diploma.jpg" alt="diploma">
+                </div>
+                <p>I hold a Bachelor's Degree in Computer Engineering from De La Salle University – Dasmariñas. This diploma reflects my dedication to mastering technical skills in programming, systems design, and engineering principles.</p>
+        </section>
+    <!-- WORK EXPERIENCE -->
+            <section class="container" id="experience">
+                <h1>Experience</h1>
+                <div class="image-row">
+                    <img src="images/The-umonics.png" alt="dlsud">
+                    <div class="education-info">
+                        <h2>The Umonics Method</h2>
+                        <label>Singapore, Singapore</label>
+                        <em>IT Intern - Remote</em>
+                        <label>February 2024 - May 2024</label>
+                    </div>
+                </div>
+                <p>During my internship at The Umonics Method, I contributed to creating digital content assets that enhanced social media engagement and brand presence. I improved website content using HTML and WordPress, leading to better user experiences and increased organic traffic through SEO optimizations. Additionally, I developed a responsive WordPress landing page focused on modern design concepts. Throughout my internship, I demonstrated flexibility and strong communication skills while successfully meeting deadlines in a remote environment.</p>
+                <div class="certificate">
+                    <img src="images/COC.jpg" alt="coc">
+                </div>
+                <p>I earned a certificate of completion for my internship at The Umonics Method, where I dedicated 300 hours over four months. This experience allowed me to enhance my skills in digital content creation, website improvements, and SEO optimization, all while contributing to a collaborative remote work environment. The internship not only solidified my understanding of industry practices but also reinforced my passion for web development and.</p>
+            </section>
+        <!-- PROJECTS -->
+            <section class="container" id="projects">
+                <h1>Projects</h1>
+                <p>As a fresh graduate in Computer Engineering, I've gained hands-on experience through internships and academic projects. My work includes developing web applications, handling data analysis tasks, and creating efficient solutions using technologies like HTML, CSS, JavaScript, and Python. Additionally, I have experience in network administration, and I've worked with tools such as WordPress, VMware, and Linux.</p>
+                <div class="custom-card-row">
+                    <!-- PROJECT 1 -->
+                    <div class="custom-card">
+                        <img src="images/project1.png" alt="Card Image" class="custom-card-img">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">JavaScript Calculator</h5>
+                            <p class="custom-card-text">This JavaScript calculator is a user-friendly tool for performing basic arithmetic operations, showcasing my skills in JavaScript and commitment to creating functional web applications.</p>
+                        </div>
+                        <div class="custom-card-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                        </div>
+                        <div class="custom-card-footer">
+                            <a href="https://dfstmmn.github.io/javascript_calculator_responsive/" class="custom-card-link">Visit Website</a>
+                            <a href="https://github.com/dfstmmn/javascript_calculator_responsive" class="custom-card-link">Source Code</a>
+                        </div>
+                    </div>
+                    <!-- PROJECT 2 -->
+                    <div class="custom-card">
+                        <img src="images/project3.png" alt="Card Image" class="custom-card-img">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">License Plate Reader</h5>
+                            <p class="custom-card-text">This automatic license plate reader, developed in Python with Flask, efficiently detects and recognizes vehicle license plates, demonstrating my skills in image processing and web development.</p>
+                        </div>
+                        <div class="custom-card-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/opencv/opencv-original.svg" />
+                        </div>
+                        <div class="custom-card-footer">
+                            <!-- <a href="#" class="custom-card-link">Visit Website</a> -->
+                            <a href="https://github.com/dfstmmn/Automatic-Number-Plate-Reader-Flask-" class="custom-card-link">Source Code</a>
+                        </div>
+                    </div>
+                    <!-- PROJECT 3 -->
+                    <div class="custom-card">
+                        <img src="images/Screenshot 2024-08-19 155803.png" alt="Card Image" class="custom-card-img">
+                        <div class="custom-card-body">
+                            <h5 class="custom-card-title">Dummy Website</h5>
+                            <p class="custom-card-text">This dummy website, built with PHP for the backend and MySQL for the database, showcases my ability to create dynamic web applications, manage data effectively, and implement user-friendly interfaces, reflecting my skills in full-stack development.</p>
+                        </div>
+                        <div class="custom-card-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original-wordmark.svg" />
+                        </div>
+                        <div class="custom-card-footer">
+                            <a href="https://dfstmmn.github.io/dummy_website/" class="custom-card-link">Visit Website</a>
+                            <a href="https://github.com/dfstmmn/dummy_website" class="custom-card-link">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- CONTACT -->
+        <section class="container" id="contact">
+            <h1>Let's get in touch!</h1>
+            <p>Feel free to reach out if you have any questions, feedback, or opportunities you'd like to discuss. I'm always open to connecting and would love to hear from you. You can use the contact form below to get in touch!</p> 
+            <div class="contact-form">
+                <div class="comment-card">
+                    <span class="comment-title">Contact Me</span>
+                    <form action="https://api.web3forms.com/submit" method="POST" class="comment-form">
+                        <input type="hidden" name="access_key" value="8b7248f6-de3a-47a1-96a8-85e7f1be8997">
+                            <div class="comment-group">
+                                <input placeholder="" type="text" required="" id="name">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="comment-group">
+                                <input placeholder="" type="email" id="email" name="email" required="">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="comment-group">
+                                <textarea placeholder="" id="comment" name="comment" rows="5" required=""></textarea>
+                                <label for="comment">Message</label>
+                            </div>
+                    <button type="submit" class="comment-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 Emmanuel Defiesta. All Rights Reserved.</p>
+        </footer>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+#projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem 1rem; 
+}

@@ -1,0 +1,86 @@
+#education{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem 1rem; 
+}
+
+.image-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.image-row img {
+    width: 150px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits within the set width */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+.certificate img {
+    max-width: 60%; /* Make the image responsive by limiting it to the container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add some border radius for a smooth edge */
+    box-shadow: var(--darkshadow);
+    display: block; /* Make sure the image doesn't have any extra space around */
+    margin: 0 auto; /* Center the image horizontally if the parent div has a fixed width */
+}
+.education-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.education-info h2{
+    font-size: 1rem;
+}
+.image{
+    display: grid;
+    align-items: center;
+}
+.image img{
+    width: 9rem;
+    height: auto;
+}
+.text p{
+    color: var(--blue);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .image-row img {
+        width: 100px; /* Decrease image size on smaller screens */
+    }
+
+    .certificate img {
+        max-width: 75%; /* Further reduce image size */
+    }
+
+    .education-info {
+        padding: 0.5rem; /* Reduce padding for smaller screens */
+    }
+    .education-info h2, label, em {
+        font-size: 1rem;
+    }
+
+    .image img {
+        width: 6rem; /* Reduce the image size */
+    }
+
+    .text p {
+        font-size: 0.875rem; /* Decrease text size */
+    }
+
+    #education {
+        padding: 1rem; /* Reduce padding around the section */
+    }
+}
+
+@media (max-width: 500px){
+    .education-info h2, label, em {
+        font-size: 0.75rem; /* Decrease text size */
+    }
+}

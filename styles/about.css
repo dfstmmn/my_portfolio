@@ -1,0 +1,19 @@
+:root{
+    --navy: #24293E;
+    --ocean: #2F3651;
+    --clear: #8EBBFF;
+    --blue: #9290C3;
+    --gray: #2C2C2C;
+    --parchment: #FBF5DF;
+    --whiteshadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+    --darkshadow: 4px 4px 0 rgba(44, 44, 44, 0.5);
+ }
+
+ #about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.5rem 1rem; 
+}
+

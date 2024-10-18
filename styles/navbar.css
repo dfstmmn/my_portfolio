@@ -1,0 +1,119 @@
+:root{
+    --navy: #24293E;
+    --ocean: #2F3651;
+    --clear: #8EBBFF;
+    --blue: #9290C3;
+    --gray: #2C2C2C;
+    --parchment: #FBF5DF;
+    --whiteshadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+    --darkshadow: 4px 4px 0 rgba(44, 44, 44, 0.5);
+ }
+
+ nav {
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+    width: 100%; /* Adjust width to account for the sidebar */
+    background-color: var(--ocean); /* Transparent background */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    flex: 1 0 100px; /* Allow items to grow and set a minimum width */
+    text-align: center; /* Center text in list items */
+}
+
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: var(--parchment); 
+    justify-content: space-around;
+    padding: 0.5rem;
+    display: block;
+    transition: color 0.3s;
+    overflow: hidden;
+}
+nav ul li a::before,
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px; /* Height of the lines */
+    background-color: var(--clear); /* Color of the lines */
+    transition: width 0.3s; /* Animation for the line width */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+nav ul li a::before {
+    top: 0;
+    width: 0; /* Start with no width */
+}
+
+nav ul li a::after {
+    bottom: 0;
+    width: 0; /* Start with no width */
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    width: 100%; /* Expand the width on hover */
+}
+
+nav ul li a:hover {
+    color: var(--clear); /* Change text color on hover */
+}
+
+nav ul li a.active {
+    color: var(--parchment); /* Change the color to indicate it's active */
+    font-weight: bold; /* Optional: make it bold */
+    position: relative; /* Set position to relative for the pseudo-elements */
+}
+
+/* Style for the underline effect */
+nav ul li a.active::before,
+nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    height: 2px; /* Height of the lines */
+    background-color: var(--parchment); /* Color of the lines */
+    transition: width 0.3s; /* Animation for the line width */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+nav ul li a.active::before {
+    top: 0; /* Position above the text */
+    width: 100%; /* Full width */
+}
+
+nav ul li a.active::after {
+    bottom: 0; /* Position below the text */
+    width: 100%; /* Full width */
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Keep items in a row on larger screens */
+        justify-content: center; /* Center align items */
+    }
+
+    nav ul li {
+        flex: 1 1 auto; /* Allow items to grow and shrink */
+        width: auto; /* Allow items to take auto width */
+    }
+    nav ul li a{
+        font-size: 8px;
+    }
+}

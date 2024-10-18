@@ -1,0 +1,105 @@
+:root{
+    --navy: #24293E;
+    --ocean: #2F3651;
+    --clear: #8EBBFF;
+    --blue: #9290C3;
+    --gray: #2C2C2C;
+    --parchment: #FBF5DF;
+    --whiteshadow: 4px 4px 0 rgba(255, 255, 255, 0.5);
+    --darkshadow: 4px 4px 0 rgba(44, 44, 44, 0.5);
+ }
+ .custom-card-row {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next row on smaller screens */
+    gap: 0.5rem; /* Spacing between cards */
+    justify-content: center; /* Center and space out cards */
+    max-width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    /* padding: 1rem 0.5rem; */
+}
+/* Card container */
+.custom-card {
+    width: 18rem;
+    height: 475px;
+    max-height: 600px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s;
+}
+
+.custom-card:hover {
+    box-shadow: var(--whiteshadow);
+}
+.custom-card:hover .custom-card-img {
+    transform: scale(1.1); /* Zoom in the image slightly */
+}
+/* Image */
+.custom-card-img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Card body */
+.custom-card-body {
+    padding: 1rem;
+    flex-grow: 1;
+}
+
+.custom-card-title {
+    margin: 0 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.custom-card-text {
+    font-size: 0.9rem;
+    color: var(--blue);
+}
+
+/* Icons container */
+.custom-card-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.custom-card-icons img {
+    width: 1.5rem; /* Set icon size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+
+/* Footer links */
+.custom-card-footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.custom-card-link {
+    text-decoration: none;
+    color: var(--clear);
+    font-size: 0.9rem;
+}
+
+.custom-card-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .custom-card {
+        width: 100%;
+        height: auto;
+    }
+}

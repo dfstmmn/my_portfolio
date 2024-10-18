@@ -1,0 +1,32 @@
+form{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--gray);
+    box-shadow: var(--whiteshadow);
+    border-radius: 10px;
+    padding: 1rem;
+}
+form input{
+    width: 100%;
+    
+}
+.form-name{
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.message input{
+    height: 5rem;
+    padding: 5px;
+
+}
+.input{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
